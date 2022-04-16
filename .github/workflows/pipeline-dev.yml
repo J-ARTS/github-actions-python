@@ -27,7 +27,7 @@ jobs:
       # run tests
       #----------------------------------------------
       - name: Run PyTest
-        run: poetry run pytest tests/ --junitxml=./out_report.xml
+        run: poetry run pytest tests/ --junitxml=test-results/out_report.xml
         
       #----------------------------------------------
       # display test results
@@ -37,6 +37,6 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action/composite@v1
         if: always()
         with:
-          files: "out_report.xml"
+          files: "test-results/**/*.xml"
       
       
