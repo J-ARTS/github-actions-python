@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "etl-pyspark"
+version = "0.1.0"
+description = ""
+authors = ["Jeremy Teichmann <wi15125@lehre.dhbw-stuttgart.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyspark = "^3.1.3"
+findspark = "^2.0.1"
+ujson = "^5.1.0"
+dependency-injector = {extras = ["yaml"], version = "^4.39.1"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

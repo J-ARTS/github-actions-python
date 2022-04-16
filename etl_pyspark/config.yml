@@ -1,0 +1,4 @@
+database:
+  user: "tej6fe"
+  password: "Jeremy95"
+  dsn: "localhost/ORCLCDB.localdomain"
