@@ -38,8 +38,9 @@ jobs:
 #        with:
 #          files: "test-results/**/*.xml"
       
-      
-      - name: FOSSA Scan
-        run: FOSSA_API_KEY=454effbebe694b924ad17226cf329210 fossa analyze
-        shell: bash
+      - name: "Run FOSSA Test"
+        uses: fossas/fossa-action@v1.1.0
+        with:
+          api-key: 454effbebe694b924ad17226cf329210
+          run-tests: true
 
