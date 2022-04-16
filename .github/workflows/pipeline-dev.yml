@@ -26,5 +26,5 @@ jobs:
       #----------------------------------------------
       # run tests
       #----------------------------------------------
-      - name: Install library
-        run: pytest 
+      - name: Run PyTest
+        run: poetry run pytest tests/ 
