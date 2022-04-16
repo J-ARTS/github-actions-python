@@ -40,5 +40,5 @@ jobs:
       
       
       - name: FOSSA Scan
-        run: FOSSA_API_KEY=454effbebe694b924ad17226cf329210 fossa analyze
+        run: fossa analyze
 
