@@ -33,9 +33,15 @@ jobs:
       # display test results
       #---------------------------------------------- 
       
-      - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action/composite@v1.32
+#      - name: Publish Unit Test Results
+#        uses: EnricoMi/publish-unit-test-result-action/composite@v1.32
+#        with:
+#          files: "test-results/**/*.xml"
+      
+      
+      - name: FOSSA Scan
+        uses: fossas/fossa-action@v1.2.0
         with:
-          files: "test-results/**/*.xml"
-      
-      
+          api-key: 454effbebe694b924ad17226cf329210
+          run-tests: true
+          branch: master
