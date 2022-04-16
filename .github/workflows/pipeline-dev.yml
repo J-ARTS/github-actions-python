@@ -43,5 +43,4 @@ jobs:
         uses: fossas/fossa-action@v1.2.0
         with:
           api-key: 454effbebe694b924ad17226cf329210
-          run-tests: true
           branch: master
