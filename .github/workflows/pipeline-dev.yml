@@ -27,4 +27,4 @@ jobs:
       # run tests
       #----------------------------------------------
       - name: Run PyTest
-        run: poetry run pytest tests/ 
+        run: poetry run pytest tests/ --junitxml=./out_report.xml
