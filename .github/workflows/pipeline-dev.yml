@@ -40,7 +40,5 @@ jobs:
       
       
       - name: FOSSA Scan
-        uses: fossas/fossa-action@v1.2.0
-        with:
-          api-key: 454effbebe694b924ad17226cf329210
-          branch: master
+        run: FOSSA_API_KEY=454effbebe694b924ad17226cf329210 fossa analyze
+
