@@ -28,3 +28,15 @@ jobs:
       #----------------------------------------------
       - name: Run PyTest
         run: poetry run pytest tests/ --junitxml=./out_report.xml
+        
+      #----------------------------------------------
+      # display test results
+      #---------------------------------------------- 
+      
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action/composite@v1
+        if: always()
+        with:
+          files: "out_report.xml"
+      
+      
